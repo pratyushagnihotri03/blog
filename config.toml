@@ -1,0 +1,282 @@
+title = "MIDDLEWARE2022"
+baseURL = "https://middleware.github.io"
+languageCode = "en-us"
+theme = "middleware-hugo-theme"
+
+# The site's parameters
+[params]
+
+  # Google Analitycs
+  googleAnalitycsID = "Your ID"
+  description = "MIDDLEWARE 2022"
+  author = "Sardar"
+
+  # follow us link
+  [[params.follow]]
+    icon = "fa-twitter"
+    URL = "https://twitter.com/2021Acm"
+
+  [[params.follow]]
+    icon = "fa-facebook"
+    URL = "https://www.facebook.com/ACM-Middleware-114686420326090"
+
+  [[params.follow]]
+    icon = "fa-linkedin"
+    URL = "https://www.linkedin.com/groups/13893141/"
+
+
+  # If you want to remove the copyright text you need a Themefisher license.
+  # This license is offered with a 50% discount for all Hugo users.
+  # For information see https://github.com/gohugoio/hugoThemes/issues/260
+
+# Multilangual : FR / EN
+[Languages]
+
+  ######## english language
+  [Languages.en]
+  languageName = "En"
+    weight = 2
+    languageCode = "en-us"
+    title = "Middleware 2022"
+    dateFormat = "January 2, 2006"
+    home = "HOME"
+
+
+  [Languages.en.menu]
+
+    [[Languages.en.menu.header]]
+    weight = 2
+    name = "CALLS"
+    hasChildren = true
+
+      [[Languages.en.menu.header]]
+      weight = 1
+      name = "Call for Research Papers"
+      parent = "CALLS"
+      url = ""
+
+      [[Languages.en.menu.header]]
+      weight = 2
+      name = "Call for Industry Papers"
+      parent = "CALLS"
+      url = ""
+
+      [[Languages.en.menu.header]]
+      weight = 3
+      name = "Call for Tutorials"
+      parent = "CALLS"
+      url = ""
+
+      [[Languages.en.menu.header]]
+      weight = 4
+      name = "Call for Workshops"
+      parent = "CALLS"
+      url = ""
+
+      [[Languages.en.menu.header]]
+      weight = 5
+      name = "Call for Demos and Posters"
+      parent = "CALLS"
+      url = ""
+
+      [[Languages.en.menu.header]]
+      weight = 6
+      name = "Call for Doctoral Symposium"
+      parent = "CALLS"
+      url = ""
+
+    [[Languages.en.menu.header]]
+    weight = 3
+    name = "COMMITTEE"
+    hasChildren = true
+
+        [[Languages.en.menu.header]]
+        weight = 1
+        name = "Organizing Committee"
+        parent = "COMMITTEE"
+        url = "/organizing-committee"
+
+        [[Languages.en.menu.header]]
+        weight = 2
+        name = "Program Committee"
+        parent = "COMMITTEE"
+        url = "/program-committee"
+
+        [[Languages.en.menu.header]]
+        weight = 3
+        name = "Industry Track PC"
+        parent = "COMMITTEE"
+        url = "/industry-pc"
+
+        [[Languages.en.menu.header]]
+        weight = 4
+        name = "Doctoral Symposium PC"
+        parent = "COMMITTEE"
+        url = ""
+
+    [[Languages.en.menu.header]]
+    weight = 4
+    name = "CONFERENCE INFO"
+    hasChildren = true
+
+      [[Languages.en.menu.header]]
+      weight = 1
+      name = "Important Dates"
+      parent = "CONFERENCE INFO"
+      url = "/important-dates"
+
+      [[Languages.en.menu.header]]
+      weight = 2
+      name = "Workshops"
+      parent = "CONFERENCE INFO"
+      url = "/workshops"
+
+      [[Languages.en.menu.header]]
+      weight = 3
+      name = "Venue Information"
+      parent = "CONFERENCE INFO"
+      url = ""
+
+      [[Languages.en.menu.header]]
+      weight = 4
+      name = "Accommodation"
+      parent = "CONFERENCE INFO"
+      url = ""
+
+      [[Languages.en.menu.header]]
+      weight = 5
+      name = "Visa Information"
+      parent = "CONFERENCE INFO"
+      url = ""
+
+
+    [[Languages.en.menu.header]]
+    weight = 5
+    name = "PROGRAM"
+    hasChildren = true
+
+      [[Languages.en.menu.header]]
+      weight = 1
+      name = "Full Program"
+      parent = "PROGRAM"
+      url = ""
+
+      [[Languages.en.menu.header]]
+      weight = 2
+      name = "Keynote Speakers"
+      parent = "PROGRAM"
+      url = "/keynote-speakers"
+
+      [[Languages.en.menu.header]]
+      weight = 3
+      name = "Accepted Papers"
+      parent = "PROGRAM"
+      url = ""
+
+    [[Languages.en.menu.header]]
+    weight = 6
+    name = "REGISTRATION"
+    hasChildren = true
+
+      [[Languages.en.menu.header]]
+      weight = 1
+      name = "Conference Registration"
+      parent = "REGISTRATION"
+      url = ""
+
+      [[Languages.en.menu.header]]
+      weight = 2
+      name = "Camera-Ready Instructions"
+      parent = "REGISTRATION"
+      url = ""
+
+
+    [[Languages.en.menu.header]]
+    weight = 7
+    name = "SPONSORSHIP"
+    hasChildren = false
+    url = "/sponsorship"
+
+    #[[Languages.en.menu.footer]]
+      #weight = 1
+      #name = "About us"
+      #url = "#"
+    #[[Languages.en.menu.footer]]
+      #weight = 2
+      #name = "Contact us"
+      #url = "#"
+    #[[Languages.en.menu.footer]]
+      #weight = 3
+      #name = "How it works"
+      #url = "#"
+    #[[Languages.en.menu.footer]]
+      #weight = 4
+      #name = "Blog"
+      #url = "#"
+    #[[Languages.en.menu.footer]]
+      #weight = 5
+      #name = "Terms"
+      #url = "#"
+
+  [Languages.en.params.slider]
+    enable = true
+    title = "MIDDLEWARE 2022"
+    subtitle = "23rd ACM/IFIP International Conference"
+    date = "6<sup>th</sup> &ndash; 10<sup>th</sup> December 2022"
+    place = "Fairmont Le Château Frontenac<br>Québec City, Québec, Canada"
+    bgImage = "img/Quebec.jpg"
+    bgImageAlt = "img/Quebec.jpg"
+    btnText = "Conference Information"
+    url = "#scope"
+
+  [Languages.en.params.statement]
+    enable = true
+    text = "We are currently planning for a physical conference in Quebec City, scheduled for December 2021. Due to the current pandemic, our plans may change and require a virtual conference. We will provide updates as they become available through our various channels (Website, Twitter, Facebook, LinkedIn). In any case, please note that Middleware 2021 will adopt a 2-cycles submission process, and that the deadline for the 1st cycle submission of research articles is set to the end of November 2020."
+
+
+  [Languages.en.params.wrapper]
+    enable = true
+    image = "img/wrapper-img.png"
+    title = "ACM/IFIP Middleware"
+    textArray = ["The annual ACM/IFIP Middleware conference is a major forum for the discussion of innovations and recent scientific advances of middleware systems with a focus on the design, implementation, deployment, and evaluation of distributed systems, platforms and architectures for computing, storage, and communication.",
+    "Highlights of the conference will include a high quality single-track technical program, invited speakers, an industrial track, panel discussions involving academic and industry leaders, poster and demonstration presentations, a doctoral symposium, tutorials and workshops."]
+  [Languages.en.params.blog]
+    enable = true
+    title = "TOPICS OF INTEREST"
+    paragraph = "Original submissions of research papers on a diverse range of topics are sought, particularly those identifying new research directions. The topics of the interest for the conference include, but are not limited to:"
+    textArray = ["Cloud and data centers",
+                 "Virtualization, auto-scaling, provisioning, and scheduling",
+                 "Data-intensive computing (big data) and data analytics",
+                 "Stream Processing",
+                 "Middleware Systems for Machine learning",
+                 "Mobile and pervasive systems and services",
+                 "Middleware techniques for Internet-of-Things, smart cities",
+                 "Fog, Edge computing",
+                 "Middleware for cyber-physical and Real-time systems",
+                 "Energy and power-aware techniques",
+                 "Event-based, publish/subscribe, and peer-to-peer solutions",
+                 "Networking, network function virtualization, software-defined networking",
+                 "Middleware for multimedia Systems",
+                 "Fault tolerance and Consistency",
+                 "Blockchains",
+                 "Middleware support for security and privacy",
+                 "Monitoring, resource management and analysis",
+                 "Middleware Design principles",
+                 "Programming abstractions and paradigms for middleware",
+                 "Reconfigurable, adaptable, and reflective approaches",
+                 "Reviews of middleware paradigms, e.g., object models, aspect orientation, etc.",
+                 "Methodologies and tools for middleware systems design, implementation, verification, and evaluation"]
+  [Languages.en.params.general]
+    enable = true
+    title = "General Co-Chairs"
+    textArray = ["Kaiwen Zhang, ÉTS Montréal", "Abdelouahed Gherbi, ÉTS Montréal"]
+  [Languages.en.params.pc]
+    enable = true
+    title = "PC Co-Chairs"
+    textArray = ["Nalini Venkatasubramanian, University of California, Irvine", "‪Luís Veiga, Instituto Superior Técnico (U.Lisboa) & INESC-ID"]
+  [Languages.en.params.feature]
+    enable = false
+    title = "VENUE INFORMATION"
+    bgImage = "img/campus.png"
+    bgImageAlt = "img/campus.png"
+    content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

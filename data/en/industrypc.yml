@@ -1,0 +1,20 @@
+people:
+  enable: true
+title1: Industry Co-Chairs
+people1:
+  - person: Ali Kanso, Microsoft
+  - person: Chen Wang, IBM Thomas J. Watson Research Center
+
+
+title2: Members
+members:
+  - person: Robert Birke, ABB Research
+  - person: Abhishek Gupta, Schlumberger
+  - person: Wubin Li, Ericsson
+  - person: Ruben Mayer, TU Munich
+  - person: Alexander Merritt, BedRock Systems
+  - person: Iqbal Mohomed, Samsung AI Centre Toronto
+  - person: Vinod Muthusamy, IBM Thomas J. Watson Research Center
+  - person: Indrajit Roy, Google
+  - person: Mohammad Shahrad, Princeton University / University of British Columbia
+  - person: Mike Spreitzer, IBM Thomas J. Watson Research Center

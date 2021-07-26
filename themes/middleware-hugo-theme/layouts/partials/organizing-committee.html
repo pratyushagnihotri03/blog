@@ -1,0 +1,74 @@
+{{ partial "global-header.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<section id = "organizing-committee">
+  <div class="container">
+    <div class="row">
+      {{ if $data.organizingcommittee.people.enable }}
+      <div class="col-md-9 col-sm-12">
+        <div class="block">
+          <div>
+            <h1>{{ $data.organizingcommittee.title1 }}</h1>
+            {{ range $data.organizingcommittee.people1 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title2 }}</h1>
+            {{ range $data.organizingcommittee.people2 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title3 }}</h1>
+            {{ range $data.organizingcommittee.people3 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title4 }}</h1>
+            {{ range $data.organizingcommittee.people4 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title5 }}</h1>
+            {{ range $data.organizingcommittee.people5 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title6 }}</h1>
+            {{ range $data.organizingcommittee.people6 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title7 }}</h1>
+            {{ range $data.organizingcommittee.people7 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title8 }}</h1>
+            {{ range $data.organizingcommittee.people8 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title9 }}</h1>
+            {{ range $data.organizingcommittee.people9 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title10 }}</h1>
+            {{ range $data.organizingcommittee.people10 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title11 }}</h1>
+            {{ range $data.organizingcommittee.people11 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title12 }}</h1>
+            {{ range $data.organizingcommittee.people12 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title13 }}</h1>
+            {{ range $data.organizingcommittee.people13 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.organizingcommittee.title14 }}</h1>
+            {{ range $data.organizingcommittee.people14 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ partial "sidebar.html" . }}
+    </div>
+  </div>
+</section>

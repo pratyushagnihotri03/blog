@@ -1,0 +1,75 @@
+{{ partial "global-header.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<section id = "sponsorship">
+  <div class="container">
+    <div class="row">
+      {{ if $data.sponsorship.sponsors.enable }}
+      <div class="col-md-9 col-sm-12">
+        <div class="block">
+          <div>
+            <h3>{{ $data.sponsorship.text1 }}</h3>
+          </div>
+          <div>
+            <h1>{{ $data.sponsorship.title1 }}</h1>
+            {{ range $data.sponsorship.reasons }}
+            <ul class="default-ul">
+              <li align = "justify">{{.reason}}</li>
+            </ul>
+
+            {{ end }}
+          </div>
+          <div>
+            <h1>{{ $data.sponsorship.title2 }}</h1>
+            {{ range $data.sponsorship.logos }}
+            <div style="display:inline-flex;">
+              <div style="padding:35px;"><img src= "/{{.logo}}" alt="sponsors"></div>
+            </div>
+            {{end}}
+          </div>
+          <div>
+            <h1>{{ $data.sponsorship.title3 }}</h1>
+            <div>
+              <h3>{{  $data.sponsorship.type1 | markdownify }}</h3>
+              {{ range $data.sponsorship.details1 }}
+              <ul class="default-ul">
+                <li align = "justify">{{.detail}}</li>
+              </ul>
+              {{ end }}
+            </div>
+            <div>
+              <h3>{{  $data.sponsorship.type2 | markdownify }}</h3>
+              {{ range $data.sponsorship.details2 }}
+                <ul class="default-ul">
+                  <li align = "justify">{{.detail}}</li>
+                </ul>
+              {{ end }}
+            </div>
+            <div>
+              <h3>{{  $data.sponsorship.type3 | markdownify }}</h3>
+              {{ range $data.sponsorship.details3 }}
+              <ul class="default-ul">
+                <li align = "justify">{{.detail}}</li>
+              </ul>
+              {{ end }}
+            </div>
+            <div>
+              <h3>{{  $data.sponsorship.type4 | markdownify }}</h3>
+              <p align="justify"><b>Note:</b> In the event that the event is held virtually, alternative arrangements will be made for the sponsorship.</p>
+            </div>
+            <div>
+              <h1>{{ $data.sponsorship.title4 }}</h1>
+              {{ range $data.sponsorship.id }}
+              <ul class="default-ul">
+                <li align = "justify">{{.person}}, <a href="mailto:{{.email}}">{{.email}}</a></li>
+              </ul>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ partial "sidebar.html" . }}
+    </div>
+  </div>
+</section>

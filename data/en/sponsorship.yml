@@ -1,0 +1,63 @@
+sponsors:
+  enable: true
+
+text1: "We would like to invite you to be a sponsor of the 22nd edition of the ACM/IFIP International Middleware Conference!"
+
+title1: Why Sponsor Middleware 2021
+reasons:
+  - reason: "Enable the next generation of researchers, practitioners and developers attend and participate in Middleware 2021"
+  - reason: "Promote your open-source initiatives and encourage academics and industrial participants to use your hardware/software and cloud-based offerings in their research"
+  - reason: "Engage with top quality graduate students from around the world and recruit them to your organization/research lab for internships and full-time positions"
+  - reason: "Support graduate students – at least 80% of the money obtained from corporate sponsorships will be used for the Middleware Student Travel Grant program"
+
+title2: Past Sponsors
+
+logos:
+  - logo: "img/sponsors/sponsor-logo7.png"
+  - logo: "img/sponsors/sponsor-logo8.png"
+  - logo: "img/sponsors/sponsor-logo9.png"
+  - logo: "img/sponsors/sponsor-logo10.png"
+  - logo: "img/sponsors/sponsor-logo11.png"
+  - logo: "img/sponsors/sponsor-logo12.png"
+  - logo: "img/sponsors/sponsor-logo13.png"
+  - logo: "img/sponsors/sponsor-logo14.png"
+  - logo: "img/sponsors/sponsor-logo15.png"
+  - logo: "img/sponsors/sponsor-logo16.png"
+  - logo: "img/sponsors/sponsor-logo17.png"
+
+title3: "Sponsorship Levels"
+
+type1: Silver -- USD 2000
+details1:
+  - detail: Sponsor’s name and logo displayed in the conference program, website, advertisements and proceedings along with the sponsorship level
+  - detail: Promotional materials in the delegate pack/bag
+  - detail: Includes one complimentary registration
+  - detail: Supports up to two student travel grants
+
+
+type2: 'Gold -- USD 5000: Includes all the benefits of silver level plus'
+details2:
+  - detail: 'Poster in the registration area'
+  - detail: "Recruiting and/or product demo booth"
+  - detail: "Includes two complimentary registrations"
+  - detail: "Supports up to five student travel grants"
+
+type3: 'Diamond -- USD 10000: Includes all the benefits of gold level plus'
+details3:
+  - detail: Exclusive promotion and recognition of the sponsor at specific conference events, like reception, poster/demo session, banquet or other events. Allocation of diamond sponsors to events will be FCFS (first come first served)
+  - detail: Includes four complimentary registrations
+  - detail: Supports up to 10 student travel grants
+
+type4: 'Custom -- Please contact us by email for custom packages'
+
+title4: Contact Info For Sponsorships
+
+id:
+  - person: Neal Xiong
+    email:  xiong31@nsuok.edu
+
+  - person: Kaiwen Zhang
+    email: Kaiwen.Zhang@etsmtl.ca
+
+  - person: Abdelouahed Gherbi
+    email: Abdelouahed.Gherbi@etsmtl.ca

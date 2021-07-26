@@ -1,0 +1,116 @@
+<!-- Wrapper Start -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<section id="intro" style="margin-bottom:0px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <div style="margin-top:39px;">
+              <p align="justify" style="color:#B16407">{{ .Site.Params.statement.text | markdownify }}</p>
+            </div>
+            <div>
+              <h2>{{ .Site.Params.wrapper.title }}</h2>
+              {{ range .Site.Params.wrapper.textArray }}
+                <p align="justify">{{ . }}</p>
+              {{ end }}
+            </div>
+            <div id="scope">
+              <h2>{{ .Site.Params.blog.title }}</h2>
+              <p align="justify">{{ .Site.Params.blog.paragraph }}</p>
+              {{ range .Site.Params.blog.textArray }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </div>
+            <div>
+              <h2 style="margin-bottom:20px;">{{ .Site.Params.general.title }}</h2>
+              {{ range .Site.Params.general.textArray }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </div>
+            <div>
+              <h2 style="margin-bottom:20px;">{{ .Site.Params.pc.title }}</h2>
+              {{ range .Site.Params.pc.textArray }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        {{ $data := index .Site.Data .Site.Language.Lang }}
+        {{ if $data.testimonial.enable }}
+        <!-- Content Start -->
+        <div id="testimonial" style="margin-top:0px; margin-bottom:0px;">
+            <!-- Header -->
+              <div class="section-title text-center">
+                <h2>{{ $data.testimonial.title }}</h2>
+                <p align="justify">{{ $data.testimonial.paragraph }}</p>
+              </div>
+
+              {{ if $data.testimonial.number.enable }}
+              <div class="col-md-6">
+                <div class="block">
+                  <!-- Content -->
+                  <ul class="counter-box clearfix">
+                    {{ range $data.testimonial.numbers }}
+                    <li>
+                      <div class="block">
+                        <i class="{{ .icon }}"></i>
+                        <h4 class="counter" data-count="{{ .counter }}">0</h4>
+                        <span>{{ .text }}</span>
+                      </div>
+                    </li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+              {{ end }}
+              {{ if $data.testimonial.peoples.enable }}
+                <div class="section-title">
+                  <h2>KEYNOTE SPEAKERS</h2>
+                </div>
+                <div class="testimonial-carousel">
+                  <div id="testimonial-slider" class="owl-carousel">
+                    {{ range $data.testimonial.people }}
+                    <div>
+                        <p>{{ .text }}</p>
+                        <div class="user">
+                          <a href="/{{ .linkTo }}"><img src="{{ $.Site.BaseURL }}{{ .image }}" width="20%" alt="Pepole"></a>
+                          <p><span>{{ .name }}</span> <uni>{{ .university }}</uni> <tit><a href="/{{ .linkTo }}">{{ .title }}</a></tit></p>
+                        </div>
+                    </div>
+                    {{ end }}
+                  </div>
+                </div>
+              {{ end }}
+          </div>
+        {{ end }}
+      </div>
+      {{ partial "sidebar.html" . }}
+    </div>
+  </div>
+</section>

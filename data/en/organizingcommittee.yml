@@ -1,0 +1,68 @@
+people:
+  enable: true
+
+title1: General Co-Chairs
+people1:
+  - person: Kaiwen Zhang, ÉTS
+  - person: Abdelouahed Gherbi, ÉTS
+
+title2: PC Co-Chairs
+people2:
+  - person: Nalini Venkatasubramanian, University of California, Irvine
+  - person: ‪Luís Veiga, Instituto Superior Técnico (U.Lisboa) & INESC-ID
+
+title3: Industry Co-Chairs
+people3:
+  - person: Ali Kanso, Microsoft
+  - person: Chen Wang, IBM T.J. Watson Research Center
+
+title4: Local Co-Chairs
+people4:
+  - person: Mohamed Mejri, Laval University
+  - person: ‪Jaouhar Fattahi, Laval University
+
+title5: Proceedings Co-Chairs
+people5:
+  - person: Julien Gascon-Samson, ÉTS
+  - person: Sukanya Bhowmik, University of Stuttgart
+
+title6: Workshops Co-Chairs
+people6:
+  - person: Aniruddha Gokhale, Vanderbilt
+  - person: Christine Julien, University of Texas at Austin
+
+title7: Tutorials Chair
+people7:
+  - person: Nadjia Kara, ÉTS
+
+title8: Doctoral Symposium Co-Chairs
+people8:
+  - person: Manar Jammal, York University
+  - person: Abhishek Dubey, Vanderbilt
+
+title9: Demos and Posters Co-Chairs
+people9:
+  - person: Paolo Bellavista, University of Bologna
+  - person: Ruidong Li, Kanazawa University
+
+title10: Sponsorship Chair
+people10:
+  - person: Neal Xiong, Northeastern State University
+
+title11: Artifact Evaluation Chair
+people11:
+  - person: Md Yusuf Sarwar Uddin, University of Missouri Kansas City
+
+title12: Publicity Co-Chairs
+people12:
+  - person: Manisha Luthra, TU Darmstadt
+  - person: Aamir Shahzad, ÉTS
+
+title13: Web Co-Chairs
+people13:
+  - person: Sardar Basiri, ÉTS
+  - person: Pratyush Agnihotri, axxessio GmbH
+
+title14: Registration Chair
+people14:
+  - person: Ahmed Bali, ÉTS

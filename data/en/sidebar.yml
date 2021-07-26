@@ -1,0 +1,75 @@
+events:
+  enable : true
+  title3 : FIRST RESEARCH TRACK CYCLE
+  title1 : SECOND RESEARCH TRACK CYCLE
+  title2 : OTHER TRACKS
+
+  eventsList3:
+    - event : Abstract Submission
+      date :  <del>November 20th, 2020</del>
+
+    - event : Full Paper Submission
+      date :  <del>December 1st, 2020</del>
+
+    - event : Author Notification
+      date :  <del>February 28th</del> March 3rd, 2021
+
+    - event : Revised Submissions
+      date :  <del>April 2nd</del> April 5th, 2021
+
+    - event : Notifications of Decisions of Revised Papers
+      date :  <del>April 30th</del> May 20th, 2021
+
+    - event : <a href="https://middleware-conf.github.io/2021/camera-ready-instructions/">Camera Ready</a>
+      date :  <del>June 14th</del> July 7th, 2021
+
+  eventsList1:
+
+    - event : Abstract Submission
+      date :  <del>May 15th</del> May 22nd, 2021
+
+    - event : Full Paper Submission
+      date :  <del>May 22nd</del> June 1st, 2021
+
+    - event : Author Notification
+      date :  August 15th, 2021
+
+    - event : Revised Submissions
+      date :  September 15th, 2021
+
+    - event : Notifications of Decisions of Revised Papers
+      date :  September 30th, 2021
+
+    - event : <a href="https://middleware-conf.github.io/2021/camera-ready-instructions/">Camera Ready</a>
+      date :  Will be announced later
+
+  eventsList2:
+
+    - event : Workshop Proposal Submission
+      date :  May 21st, 2021
+
+    - event : Industry Track Abstract Submission
+      date :  <del>May 15th</del> May 22nd, 2021
+
+    - event : Industry Track Full Paper Submission
+      date :  <del>May 22nd</del> June 1st, 2021
+
+    - event : Doctoral Symposium Submission
+      date :  September 15th, 2021
+
+    - event : Demo & Poster Submission
+      date :  October 1st, 2021
+
+  eventsList4:
+
+    - event : Conference
+      date : December 6th -- 10th, 2021
+
+
+
+    #- event : new event
+      #date : 06/12/2019
+
+twitterFeed:
+  enable : true
+  userID : 2021Acm

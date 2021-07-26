@@ -1,0 +1,26 @@
+{{ partial "global-header.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<section id = "industry-pc">
+  <div class="container">
+    <div class="row">
+      {{ if $data.industrypc.people.enable }}
+      <div class="col-md-9 col-sm-12">
+        <div class="block">
+          <div>
+            <h1>{{ $data.industrypc.title1 }}</h1>
+            {{ range $data.industrypc.people1 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.industrypc.title2 }}</h1>
+            {{ range $data.industrypc.members }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ partial "sidebar.html" . }}
+    </div>
+  </div>
+</section>

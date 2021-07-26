@@ -1,0 +1,27 @@
+{{ partial "global-header.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<section id = "program-committee">
+  <div class="container">
+    <div class="row">
+      {{ if $data.programcommittee.people.enable }}
+      <div class="col-md-9 col-sm-12">
+        <div class="block">
+          <div>
+            <h1 style="color:#B16407">{{ $data.programcommittee.mention }}</h1>
+            <h1>{{ $data.programcommittee.title1 }}</h1>
+            {{ range $data.programcommittee.people1 }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+            <h1>{{ $data.programcommittee.title2 }}</h1>
+            {{ range $data.programcommittee.members }}
+            <li align = "justify">{{.person}}</li>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ partial "sidebar.html" . }}
+    </div>
+  </div>
+</section>

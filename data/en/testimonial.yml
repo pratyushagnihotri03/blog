@@ -1,0 +1,12 @@
+enable: true
+
+peoples:
+  enable : true
+people:
+  - text: >
+      KEYNOTE
+    image: /img/keynotes/keynote1.jpg
+    name: Raouf Boutaba
+    linkTo: keynote-speakers/
+    university: University of Waterloo
+    title: "The Cloud to Things Continuum - Infrastructure, Security, and Management"

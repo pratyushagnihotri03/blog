@@ -1,0 +1,54 @@
+<!-- Header Start -->
+<header class="navbar-sticky-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- header Nav Start -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+                <img src="{{ .Site.BaseURL }}img/middleware-logo.png" alt="{{ .Site.Title }} Logo">
+              </a>
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a></li>
+                {{ range .Site.Menus.header }}
+                {{ if .HasChildren }}
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ .Name }} <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    {{ range .Children }}
+                    <li><a class="text-left" href="{{ .URL }}/">{{ .Name }}</a></li>
+                    {{ end }}
+                  </ul>
+                </li>
+                {{ else }}
+                  <li><a href="{{ .URL }}/">{{ .Name }}</a></li>
+                {{ end }}
+                {{ end }}
+              </ul>
+              <!-- Language List -->
+              <ul class="list-inline lang-list">
+                {{ range $.Site.Home.AllTranslations }}
+                <li class="list-inline-item"><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                {{ end }}
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</header><!-- header close -->

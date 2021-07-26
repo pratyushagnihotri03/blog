@@ -1,0 +1,25 @@
+<!-- footer Start -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            {{ range .Site.Menus.footer }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        <div class="footer-manu">
+          <ul class="list-inline mb-20">
+            <li class="list-inline-item">Follow us:</li>
+            {{ range .Site.Params.follow }}
+            <li class="list-inline-item"><a href="{{ .URL }}" target="_blank"><i class="fa {{.icon}}"></i></a></li>
+            {{ end }}
+          </ul>
+          <p><center>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All rights reserved | ÉTS</center></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,43 @@
+{{ partial "global-header.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<section id = "support">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-sm-12">
+        <div class="block">
+          <div>
+            <h1>{{ $data.support.title }}</h1><br>
+            <h4>{{ $data.support.paragraph }}</h4>
+            {{ range $data.support.texts }}
+            <p align="justify">{{.text}}</P>
+            {{ end }}
+          </div>
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+              <tbody>
+                {{ range $data.support.events.eventsList }}
+                <tr>
+                  <td>{{.type | markdownify}}</td>
+                  <td>{{.info | markdownify}}</td>
+                </tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <p align="justify">{{ $data.support.text }}</P>
+            <p align="justify">{{ $data.support.contactText }} <a href="mailto:{{ $data.support.email }}">{{ $data.support.person }}</a>.</P>
+          </div>
+          <div>
+            <h1>{{ $data.support.sponsor.title }}</h1>
+            <div style="margin-top: 30px; margin-left">
+              <a href="{{ $data.support.sponsor.link }}" target = _blank style="margin-bottom: 100px;"><img src="{{ $data.support.sponsor.logo }}" alt="goldsponsor"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ partial "sidebar.html" . }}
+    </div>
+  </div>
+</section>
