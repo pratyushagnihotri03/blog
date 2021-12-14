@@ -1,5 +1,5 @@
 title = "MIDDLEWARE2022"
-baseURL = "https://middleware.github.io"
+baseURL = "https://middleware-conf.github.io/2022/"
 languageCode = "en-us"
 theme = "middleware-hugo-theme"
 
@@ -53,37 +53,37 @@ theme = "middleware-hugo-theme"
       weight = 1
       name = "Call for Research Papers"
       parent = "CALLS"
-      url = ""
+      url = "/call-for-research-papers"
 
       [[Languages.en.menu.header]]
       weight = 2
       name = "Call for Industry Papers"
       parent = "CALLS"
-      url = ""
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 3
       name = "Call for Tutorials"
       parent = "CALLS"
-      url = ""
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 4
       name = "Call for Workshops"
       parent = "CALLS"
-      url = ""
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 5
       name = "Call for Demos and Posters"
       parent = "CALLS"
-      url = ""
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 6
       name = "Call for Doctoral Symposium"
       parent = "CALLS"
-      url = ""
+      url = "/"
 
     [[Languages.en.menu.header]]
     weight = 3
@@ -112,7 +112,7 @@ theme = "middleware-hugo-theme"
         weight = 4
         name = "Doctoral Symposium PC"
         parent = "COMMITTEE"
-        url = ""
+        url = "/doctoral-symposium-pc"
 
     [[Languages.en.menu.header]]
     weight = 4
@@ -123,31 +123,31 @@ theme = "middleware-hugo-theme"
       weight = 1
       name = "Important Dates"
       parent = "CONFERENCE INFO"
-      url = "/important-dates"
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 2
       name = "Workshops"
       parent = "CONFERENCE INFO"
-      url = "/workshops"
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 3
       name = "Venue Information"
       parent = "CONFERENCE INFO"
-      url = ""
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 4
       name = "Accommodation"
       parent = "CONFERENCE INFO"
-      url = ""
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 5
       name = "Visa Information"
       parent = "CONFERENCE INFO"
-      url = ""
+      url = "/"
 
 
     [[Languages.en.menu.header]]
@@ -159,19 +159,19 @@ theme = "middleware-hugo-theme"
       weight = 1
       name = "Full Program"
       parent = "PROGRAM"
-      url = ""
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 2
       name = "Keynote Speakers"
       parent = "PROGRAM"
-      url = "/keynote-speakers"
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 3
       name = "Accepted Papers"
       parent = "PROGRAM"
-      url = ""
+      url = "/"
 
     [[Languages.en.menu.header]]
     weight = 6
@@ -182,13 +182,13 @@ theme = "middleware-hugo-theme"
       weight = 1
       name = "Conference Registration"
       parent = "REGISTRATION"
-      url = ""
+      url = "/"
 
       [[Languages.en.menu.header]]
       weight = 2
       name = "Camera-Ready Instructions"
       parent = "REGISTRATION"
-      url = ""
+      url = "/"
 
 
     [[Languages.en.menu.header]]
@@ -222,7 +222,7 @@ theme = "middleware-hugo-theme"
     enable = true
     title = "MIDDLEWARE 2022"
     subtitle = "23rd ACM/IFIP International Conference"
-    date = "6<sup>th</sup> &ndash; 10<sup>th</sup> December 2022"
+    date = "7<sup>th</sup> &ndash; 11<sup>th</sup> November 2022"
     place = "Fairmont Le Château Frontenac<br>Québec City, Québec, Canada"
     bgImage = "img/Quebec.jpg"
     bgImageAlt = "img/Quebec.jpg"
@@ -231,7 +231,7 @@ theme = "middleware-hugo-theme"
 
   [Languages.en.params.statement]
     enable = true
-    text = "We are currently planning for a physical conference in Quebec City, scheduled for December 2021. Due to the current pandemic, our plans may change and require a virtual conference. We will provide updates as they become available through our various channels (Website, Twitter, Facebook, LinkedIn). In any case, please note that Middleware 2021 will adopt a 2-cycles submission process, and that the deadline for the 1st cycle submission of research articles is set to the end of November 2020."
+    text = "We are currently planning for a physical conference in Quebec City, scheduled for November 2022. Due to the current pandemic, our plans may change and require a virtual conference. We will provide updates as they become available through our various channels (Website, Twitter, Facebook, LinkedIn). In any case, please note that Middleware 2022 will adopt a 2-cycles submission process, and that the deadline for the 1st cycle submission of research articles is set to the end of November 2021."
 
 
   [Languages.en.params.wrapper]
@@ -273,7 +273,7 @@ theme = "middleware-hugo-theme"
   [Languages.en.params.pc]
     enable = true
     title = "PC Co-Chairs"
-    textArray = ["Nalini Venkatasubramanian, University of California, Irvine", "‪Luís Veiga, Instituto Superior Técnico (U.Lisboa) & INESC-ID"]
+    textArray = ["Saurabh bagchi, Purdue University, Indiana, United States", "‪Marta Patino-Martinez, Polytechnic University of Madrid, Madrid, Spain"]
   [Languages.en.params.feature]
     enable = false
     title = "VENUE INFORMATION"
